@@ -20,7 +20,6 @@ std::mt19937 gen(rd());
 
 void producer(int count) {
     std::uniform_int_distribution<> dist(1, t1);
-
     for (int i = 1; i <= count; ++i) {
         int sleepTime = dist(gen);
         std::this_thread::sleep_for(std::chrono::seconds(sleepTime));
