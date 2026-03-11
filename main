@@ -1,0 +1,10 @@
+from  simulation import find_min_time
+def main():
+ N = 1000
+ m = 5
+ t1 = 5
+
+ T = find_min_time(N, m, t1)
+ print("Мінімальний час приходу"),
+if __name__ == "__main__":
+ main()
